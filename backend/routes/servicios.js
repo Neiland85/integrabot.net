@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const serviciosController = require("../controllers/serviciosController"); // ✅ Importar correctamente
+const serviciosController = require("../controllers/serviciosController"); // ✅ Importar el controlador
 
-router.get("/", serviciosController.getServicios); // ✅ Usar la función del controlador
+// Definir ruta GET para "/servicios"
+router.get("/", serviciosController.getServicios); // ✅ Ruta principal
 
-module.exports = router; // ✅ Exportar el router correctamente
-
+module.exports = router; // ✅ Exportar el router
