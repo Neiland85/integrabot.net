@@ -18,12 +18,10 @@ app.use(morgan("dev")); // Habilitar logs HTTP detallados en la terminal
 // 📌 Importar rutas correctamente
 const serviciosRoutes = require("./routes/servicios");
 const contactoRoutes = require("./routes/contacto");
-const chatRoutes = require("./routes/chat");
 
 // 📌 Configurar rutas
 app.use("/servicios", serviciosRoutes);
 app.use("/contacto", contactoRoutes);
-app.use("/api/chat", chatRoutes);
 
 // 📌 Ruta de prueba
 app.get("/", (req, res) => {
